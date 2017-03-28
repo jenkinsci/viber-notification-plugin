@@ -1,0 +1,35 @@
+#Backups created by gedit
+*~
+
+#Jenkins work
+work/*
+work_copy/*
+
+# Vim files
+Session.vim
+*.swp
+
+# Eclipse
+.project
+.classpath
+.settings/*
+!.settings/org.eclipse.jdt.core.prefs
+!.settings/org.eclipse.jdt.ui.prefs
+.springBeans
+.metadata
+.externalToolBuilders
+test-output
+
+# Maven
+target
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Idea
+*.iml
+**/.idea/*
+!.idea/codeStyleSettings.xml
+!.idea/encodings.xml
