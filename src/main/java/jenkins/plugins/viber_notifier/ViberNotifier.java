@@ -8,13 +8,12 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 import javax.annotation.Nonnull;
-import javax.servlet.ServletException;
+
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.DataBoundSetter;
-import org.kohsuke.stapler.QueryParameter;
 
 import hudson.Extension;
 import hudson.Launcher;
@@ -194,16 +193,7 @@ public class ViberNotifier extends Builder {
             return "Viber Notification";
         } 
         
-        public FormValidation doCheckToken(@QueryParameter String value)
-                throws IOException, ServletException {
-        	System.out.print("Value -- X viber auth token::"+value);
-        	if(value!=null || value!=""||!value.equals("")){
-        		return FormValidation.ok();
-        	}else{
-        		 return FormValidation.error("X-Viber-Auth-Token cannot be empty");
-        	}
-        }
-
+       
 	}
     
 	
