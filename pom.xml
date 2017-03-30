@@ -30,10 +30,10 @@ THE SOFTWARE.
 		<version>2.16</version>
 	</parent>
 
-	<artifactId>viber_notifier</artifactId>
+	<artifactId>viber-notification</artifactId>
 	<version>1.8.18-SNAPSHOT</version>
 	<packaging>hpi</packaging>
-	<name>Viber Notifier</name>
+	<name>Viber Notification</name>
 	<description>
 		This plugin posts messages directly to your Viber public account via Jenkins.
 	</description>
