@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 
 import javax.annotation.Nonnull;
@@ -112,11 +114,11 @@ public class ViberNotifier extends Builder {
 	}
 	
 	
-		public  String getViberAccountMemInfo(){
+		public  String getViberAccountMemInfo() throws  IOException {
 		
 		StringBuffer jsonString = new StringBuffer();
 		String adminId = null;
-		try {
+
 			URL url = new URL(getAccountInfoUrl);
 			HttpURLConnection connection = (HttpURLConnection) url
 					.openConnection();
@@ -139,15 +141,13 @@ public class ViberNotifier extends Builder {
 					 adminId = arr.getJSONObject(i).getString("id");
 				}
 			}	
-		} catch (Exception e) {
-			throw new RuntimeException();
-		}
+		
 		return adminId;	
 	}
 
-	public  String postMessageToViber(Run<?, ?> build, String payload) {
+	public  String postMessageToViber(Run<?, ?> build, String payload) throws IOException {
 		StringBuffer jsonString = new StringBuffer();
-		try {
+	
 			URL url = new URL(postMessageUrl);
 			HttpURLConnection connection = (HttpURLConnection) url
 					.openConnection();
@@ -169,9 +169,7 @@ public class ViberNotifier extends Builder {
 			}
 			br.close();
 			connection.disconnect();
-		} catch (Exception e) {
-			throw new RuntimeException();
-		}
+		
 		return jsonString.toString();
 	}
 	
@@ -192,12 +190,7 @@ public class ViberNotifier extends Builder {
         public String getDisplayName() {
             return "Viber Notification";
         } 
-        
-       
+           
 	}
     
-	
-	
-	
-
 }
