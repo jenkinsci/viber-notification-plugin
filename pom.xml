@@ -143,7 +143,11 @@ THE SOFTWARE.
         </dependency>
 	</dependencies>
 	
-	
+	<scm>
+  <connection>scm:git:ssh://github.com/jenkinsci/viber-notification-plugin.git</connection>
+  <developerConnection>scm:git:ssh://git@github.com/jenkinsci/viber-notification-plugin.git</developerConnection>
+  <url>https://github.com/jenkinsci/viber-notification-plugin</url>
+</scm>
         
   
   <developers>
