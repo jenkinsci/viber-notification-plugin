@@ -31,7 +31,7 @@ THE SOFTWARE.
 	</parent>
 
 	<artifactId>viber-notification</artifactId>
-	<version>1.8.19-SNAPSHOT</version>
+	<version>1.8.18-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 	<name>Viber Notification</name>
 	<description>
@@ -153,10 +153,10 @@ THE SOFTWARE.
   
   <developers>
 		<developer>
-		<!-- Git account id -->
-			<id>vinaypuranik</id>
+		<!-- jenkins account id -->
+			<id>vpuranik</id>
 			<name>Vinay Puranik</name>
-			<email>vinaypuranik564@gmail.com</email>
+			<email>vinay.puranik@rakuten.com</email>
 		</developer>
 	</developers>
 
