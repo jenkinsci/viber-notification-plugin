@@ -31,7 +31,7 @@ THE SOFTWARE.
 	</parent>
 
 	<artifactId>viber-notification</artifactId>
-	<version>1.8.18</version>
+	<version>1.8.19-SNAPSHOT</version>
 	<packaging>hpi</packaging>
 	<name>Viber Notification</name>
 	<description>
@@ -147,7 +147,7 @@ THE SOFTWARE.
   <connection>scm:git:ssh://github.com/jenkinsci/viber-notification-plugin.git</connection>
   <developerConnection>scm:git:ssh://git@github.com/jenkinsci/viber-notification-plugin.git</developerConnection>
   <url>https://github.com/jenkinsci/viber-notification-plugin</url>
-  <tag>1.8.18</tag>
+  <tag>HEAD</tag>
   </scm>
         
   
