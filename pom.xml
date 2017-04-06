@@ -31,7 +31,7 @@ THE SOFTWARE.
 	</parent>
 
 	<artifactId>viber-notification</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>hpi</packaging>
 	<name>Viber Notification</name>
 	<description>
